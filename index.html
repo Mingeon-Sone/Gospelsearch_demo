@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#172f42">
+  <meta name="description" content="A quiet place to search gospel sources, explore their context, and keep what matters. An independent student prototype.">
+  <title>GOSPEL SEARCH — A place for deeper study</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23172f42'/%3E%3Cpath d='M6 8q5-2 10 2 5-4 10-2v16q-5-2-10 1-5-3-10-1zM16 10v15' fill='none' stroke='%23ffffff' stroke-width='1.6'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <button class="brand" data-page="home" aria-label="Gospel Search home"><span class="brand-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><path d="M4 6q6-2 12 2 6-4 12-2v20q-6-2-12 1-6-3-12-1zM16 8v19"/></svg></span><span>GOSPEL <b>SEARCH</b></span></button>
+    <div class="header-actions"><button class="text-button desktop-link" data-page="bookmarks">Bookmarks</button><button class="text-button desktop-link" data-page="notes">Notes</button><span class="header-rule"></span><button class="icon-button" id="menu-button" aria-label="Open navigation menu" aria-haspopup="dialog"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button></div>
+  </header>
+  <main id="main" tabindex="-1">
+    <section class="home-view"><div class="home-intro"><span class="eyebrow">A PLACE FOR DEEPER STUDY</span><h1>What would you<br>like to study?</h1><p>Timeless truths. Trusted sources. Room for your questions.</p></div><div class="search-area"><form class="search-form"><svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg><input aria-label="Search a gospel question or topic" placeholder="Ask a question or explore a gospel topic…"><button type="button" class="filter-button" aria-label="Filter sources">Sources</button><button class="primary-button" type="submit">Search</button></form><div class="search-meta"><span>Searching all 7 sources</span><button class="text-button">Need ideas?</button></div></div><div class="start-questions"><span class="eyebrow">A FEW PLACES TO BEGIN</span><div class="question-grid"><button>How do I receive personal revelation?</button><button>How can I strengthen my faith?</button><button>How can I make my prayers more meaningful?</button></div></div><div class="source-collection"><span class="eyebrow">MANY SOURCES. ONE PLACE.</span><p>Book of Mormon <i>·</i> Bible <i>·</i> Doctrine and Covenants<br>General Conference <i>·</i> BYU Speeches <i>·</i> Come, Follow Me <i>·</i> Devotionals</p></div></section>
+  </main>
+  <footer class="site-footer"><span>An independent student project</span><nav aria-label="Footer"><button data-page="about">About us</button><button data-page="faq">FAQ</button><span class="prototype-label">Interactive prototype</span></nav></footer>
+  <dialog id="menu-dialog" class="menu-dialog" aria-labelledby="menu-title"></dialog>
+  <dialog id="source-dialog" class="source-dialog" aria-labelledby="source-title"></dialog>
+  <dialog id="confirm-dialog" class="confirm-dialog" aria-labelledby="confirm-title"></dialog>
+  <div class="toast" role="status" aria-live="polite" id="toast"></div>
+</body>
+</html>
